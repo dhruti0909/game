@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="font-family: 'Times New Roman', Times, serif;text-align: center;background-color: beige";
+
+
+
+    
+   
+        <button onclick="inc()">+</button>
+        <button onclick="dec">-</button>
+        <button onclick="reset()">Reset</button>
+        <p id="value">0</p>
+        <script>
+            let count =0;
+            function render(){
+                document.getElementById("value").innerHTML=count;
+            }
+            function inc(){
+                count ++;
+                render ();
+            }
+            function dec(){
+                count --;
+                render();
+            }
+            function reset(){
+                count =0;
+                render();
+            }
+        </script>
+
+</body>
+</html>

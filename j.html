@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+</head>
+<body>
+    <h1 id="msg">HELLO JQUERY</h1>
+    <button id="bnt" style="padding: 10px;">click me</BUtton>
+        <p id="text">S  M  V  I  T</p>
+        <p id="para"># E SALA CUP NAMDE</p>
+        <button id="hide">HIDE</button>
+        <button id="show">SHOW</button>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("msg");
+        });
+        $("bnt").click(function(){
+            $("#text").text("IOT S M V I T")
+        });
+        $("#hide").click(function(){
+            $("#para").hide();
+        });
+        $("#show").click(function(){
+            $("#para").show();
+        });
+
+
+            
+
+        
+        
+    </script>
+
+
+</body>
+</html>
